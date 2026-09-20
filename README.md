@@ -4,6 +4,8 @@ A responsive patient appointment and queue management dashboard built with React
 
 CareFlow is a frontend learning project focused on building a realistic healthcare dashboard while applying modern frontend development practices.
 
+https://github.com/user-attachments/assets/6eb42d3b-625b-4df4-a116-cc266f42a0aa
+
 ##  Current Features
 
 * Responsive dashboard layout
@@ -79,7 +81,7 @@ This project is being developed to strengthen practical frontend development ski
 * [x] Appointment status styling
 * [x] Status filtering
 * [x] Patient search
-* [ ] React Router navigation
+* [x] React Router navigation
 * [ ] Appointment details
 * [ ] Patient management
 * [ ] Queue management
