@@ -5,7 +5,10 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
-import { useNavigate } from 'react-router-dom';
+import {
+  useNavigate,
+  useLocation,
+} from 'react-router-dom';
 
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import EventIcon from '@mui/icons-material/Event';
@@ -20,6 +23,7 @@ type SidebarProps = {
 
 function Sidebar({ open, onClose }: SidebarProps) {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const menuItems = [
   {
@@ -59,6 +63,7 @@ function Sidebar({ open, onClose }: SidebarProps) {
           {menuItems.map((item) => (
             <ListItemButton
             key={item.label}
+            selected={location.pathname === item.path}
             onClick={() => {
                 navigate(item.path);
                 onClose();
